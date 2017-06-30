@@ -1,0 +1,75 @@
+#dave
+tmp/
+tmp.js
+tmp.xml
+tmp.html
+tmp.java
+tmp.sql
+
+# Java Files
+*.class
+#*.jar
+*.war
+*.ear
+
+# Maven
+target/
+*.ser
+*.ec
+
+#Gradle
+.gradle
+/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+#React
+build/
+bundle.js
+
+
+
+# IntelliJ Idea
+out/
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+
+#js things
+####################
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+webpackCache/
