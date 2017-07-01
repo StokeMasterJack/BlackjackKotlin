@@ -26,6 +26,8 @@ class CardTest {
         assertEquals("King of Diamonds", c2.name)
         assertEquals(10, c2.points)
 
+        Card(1, 5)
+
         try {
             Card(value = 1, suit = 5)
             fail("Should never get here")
