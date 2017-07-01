@@ -2,7 +2,9 @@ package bj1
 
 class Hand(val name: String) {
 
-    private val _cards = mutableListOf<Card>()
+    private val _cards: MutableList<Card> = mutableListOf<Card>()
+
+    val cards: List<Card> get() = _cards
 
     fun add(card: Card) {
         _cards.add(card)

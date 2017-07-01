@@ -23,6 +23,19 @@ class HandTest {
         assertEquals("Dealer", h2.name)
         assertEquals(6, h2.points)
         assertEquals(3, h2.size)
+
+        renderHand(h1)
+        println()
+        renderHand(h2)
+
+    }
+
+    fun renderHand(h: Hand) {
+        println("${h.name}  Hand")
+        h.cards.forEach {
+            println(it.name)
+        }
+        println("${h.points}  points")
     }
 
     @Test
