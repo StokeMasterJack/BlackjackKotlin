@@ -19,5 +19,11 @@ class Card(val value: Int, val suit: Int) {
         else -> throw IllegalStateException()
     }
 
+    val name: String get() = "$valueName of $suitName"
 
+    val points: Int get() = when (value) {
+        in 1..9 -> value
+        in 10..13 -> 10
+        else -> throw IllegalStateException()
+    }
 }
