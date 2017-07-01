@@ -10,12 +10,19 @@ class Hand(val name: String) {
 
     val size get() = _cards.size
 
-    val points: Int get() {
+    val points1: Int get() {
         var t = 0
-        for (c in _cards) {
-            t += c.points
-        }
+        for (c in _cards) t += c.points
         return t
     }
+
+    val points2: Int get() {
+        var t = 0
+        _cards.forEach { t += it.points }
+        return t
+    }
+
+    val points get() = _cards.sumBy { it.points }
+
 
 }
