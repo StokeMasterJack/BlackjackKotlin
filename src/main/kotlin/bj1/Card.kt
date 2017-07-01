@@ -2,6 +2,11 @@ package bj1
 
 class Card(val value: Int, val suit: Int) {
 
+    init {
+        require(value in 1..13)
+        require(suit in 1..4)
+    }
+
     val suitName: String get() = when (suit) {
         1 -> "Spades"
         2 -> "Hearts"
