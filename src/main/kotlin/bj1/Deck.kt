@@ -1,6 +1,10 @@
 package bj1
 
-class Deck {
+import java.util.*
+
+private val rng: Random = Random()
+
+class Deck(shuffle: Boolean = true) {
 
     private val _cards = mutableListOf<Card>()
 
@@ -10,6 +14,14 @@ class Deck {
                 _cards.add(Card(v, s))
             }
         }
+        if (shuffle) repeat(10000, {
+            val i1 = rng.nextInt(52)
+            val i2 = rng.nextInt(52)
+            val c1 = _cards[i1]
+            val c2 = _cards[i2]
+            _cards[i1] = c2
+            _cards[i2] = c1
+        })
     }
 
     val size: Int get() = _cards.size
