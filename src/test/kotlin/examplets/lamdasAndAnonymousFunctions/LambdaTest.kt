@@ -1,4 +1,4 @@
-package bj1
+package examplets.lamdasAndAnonymousFunctions
 
 import org.junit.Test
 
