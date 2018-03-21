@@ -1,12 +1,12 @@
 package bj1
 
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class GameTest {
 
     @Test
-    fun t1() {
+    fun testGame() {
         val g = Game(shuffle = false)
         assertEquals(48, g.deck.size)
         assertEquals(2, g.ph.size)

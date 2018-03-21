@@ -1,6 +1,6 @@
 package examplets.nullHandling
 
-import org.junit.Test
+import kotlin.test.Test
 
 /**
  * Purpose:

@@ -1,13 +1,13 @@
 package bj1
 
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.fail
 
 class CardTest {
 
     @Test
-    fun t1() {
+    fun testCard() {
 
         val c1 = Card(value = 1, suit = 1)
         val c2 = Card(value = 13, suit = 4)
@@ -41,12 +41,7 @@ class CardTest {
         }
 
     }
-
-    @Test
-    fun t2() {
-
-
-    }
+    
 
 
 }

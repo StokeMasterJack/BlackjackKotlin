@@ -1,12 +1,12 @@
 package bj1
 
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class HandTest {
 
     @Test
-    fun t1() {
+    fun testHand() {
         val h1 = Hand(name = "Player")
         h1.add(Card(value = 1, suit = 1))
         h1.add(Card(value = 13, suit = 4))
@@ -37,13 +37,6 @@ class HandTest {
         }
         println("${h.points}  points")
     }
-
-    @Test
-    fun t2() {
-
-
-    }
-
 
 }
 

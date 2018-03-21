@@ -1,6 +1,6 @@
 package examplets.lamdasAndAnonymousFunctions
 
-import org.junit.Test
+import kotlin.test.Test
 
 class LambdaTest {
 
