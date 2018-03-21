@@ -17,56 +17,56 @@ import org.junit.Test
  */
 class NullTest {
 
-  @Test
-  fun test() {
-    val s1: String = "abc"
-//    val s2: String = null
-    val s3: String? = "xyz"
-    val s4: String? = null
+    @Test
+    fun test() {
+//        val s1: String = "abc"
+//        val s2: String = null
+//        val s3: String? = "xyz"
+//        val s4: String? = null
 
 //    f4("Foo")
-    f4(null)
+//    f4(null)
 
-  }
+    }
 
-  //Safe Access operator: ?.
-  fun f1(s: String?) {
+    //Safe Access operator: ?.
+    fun f1(s: String?) {
 //    val x:Int? = if (s != null) s.length else null
-    val x: Int? = s?.length
-    println(x)
-  }
+        val x: Int? = s?.length
+        println(x)
+    }
 
-  //Elvis operator: ?:
-  fun f2(s: String?) {
+    //Elvis operator: ?:
+    fun f2(s: String?) {
 //    val x:String = if (s != null) s else "No Value Provided"
-    val x: String = s ?: "No Value Provided"
-    println(x)
-  }
+        val x: String = s ?: "No Value Provided"
+        println(x)
+    }
 
-  //Safe Access operator + Elvis Operator
-  fun f3(s: String?) {
+    //Safe Access operator + Elvis Operator
+    fun f3(s: String?) {
 //    val x = if (s != null) s.length else 0
-    val x = s?.length ?: 0
-    println(x)
-  }
+        val x = s?.length ?: 0
+        println(x)
+    }
 
-  fun f4(s: String?) {
+    fun f4(s: String?) {
 //    val x: String = if (s != null) s else throw NullPointerException()
-    val x = s!!
-    println(x)
-  }
+        val x = s!!
+        println(x)
+    }
 
-  fun f5(s: String?) {
-    val x = s!!.length
-    println(x)
-  }
+    fun f5(s: String?) {
+        val x = s!!.length
+        println(x)
+    }
 
-  @Test
-  fun testLegacy() {
-    val x1: Int = Foo.m1(4).length
-    val x2: Int = Foo.m1(10).length
-    println(x1)
-  }
+    @Test
+    fun testLegacy() {
+        val x1: Int = Foo.m1(4).length
+        //val x2: Int = Foo.m1(10).length
+        println(x1)
+    }
 
 
 }
